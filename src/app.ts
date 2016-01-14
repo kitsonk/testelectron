@@ -16,6 +16,11 @@ app.on('window-all-closed', function() {
 	}
 });
 
+/**
+ * Creates the main application window and loads it with `index.html`
+ *
+ * __dirname is not available in this scope, so passing it in
+ */
 export = function(__dirname: string) {
 	// Create the browser window.
 	const mainWindow = global.mainWindow = new BrowserWindow({ width: 800, height: 600 });
