@@ -1,0 +1,16 @@
+{
+	"version": "1.7.0",
+	"compilerOptions": {
+		"module": "umd",
+		"target": "es5",
+		"outDir": "lib",
+		"moduleResolution": "node"
+	},
+	"files": [
+		"./src/app.ts",
+		"./src/global.ts",
+		"./src/main.ts",
+		"./src/test.ts",
+		"./typings/tsd.d.ts"
+	]
+}
