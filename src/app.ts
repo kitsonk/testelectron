@@ -1,12 +1,11 @@
-import * as electron from 'electron';
+import { app, BrowserWindow, crashReporter } from 'electron';
 import global from './global';
 
 global.mainWindow = null;
 
-const BrowserWindow = electron.BrowserWindow;
-const app = electron.app;
-
-electron.crashReporter.start();
+crashReporter.start({
+	companyName: 'SitePen, Inc.'
+});
 
 app.on('window-all-closed', function() {
 	console.log('closed');

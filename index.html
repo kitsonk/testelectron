@@ -6,17 +6,25 @@
 	</head>
 	<body>
 		<h1>Hello World!</h1>
-		We are using node <script>document.write(process.versions.node)</script>,
-		Chrome <script>document.write(process.versions.chrome)</script>,
-		and Electron <script>document.write(process.versions.electron)</script>.
+
+		<!-- the overall app loads this file into a browser window
+		   so its context will always be the window it is loaded in.
+		   If we want to load AMD modules, we need to load an AMD loader,
+		   just like in a browser -->
+
+		<!-- Load the Dojo Loader -->
 		<script src="./node_modules/dojo-loader/loader.js"></script>
 		<script>
+			/* require in this context is now the Dojo Loader */
+
+			/* Configure the loader */
 			require.config({
 				packages: [
 					{ name: 'app', location: './lib' }
 				]
 			});
 
+			/* require in a module with a callback */
 			require([ 'app/test' ], function (test) {
 				test.default();
 			});
