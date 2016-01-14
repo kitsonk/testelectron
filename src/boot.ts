@@ -1,13 +1,13 @@
 /**
  * A bootstrapping file for electron
  */
-const electron = require('electron');
+const electron = (<any> require)('electron');
 
 /**
  * Replace the electron/node loader with the
  * dojo loader.
  */
-require = require('dojo-loader');
+require = (<any> require)('dojo-loader');
 
 /**
  * Setup some configuration

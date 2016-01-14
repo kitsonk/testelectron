@@ -20,13 +20,14 @@
 			/* Configure the loader */
 			require.config({
 				packages: [
-					{ name: 'app', location: './lib' }
+					{ name: 'app', location: './lib' },
+					{ name: 'dojo', location: './node_modules/dojo' }
 				]
 			});
 
 			/* require in a module with a callback */
-			require([ 'app/test' ], function (test) {
-				test.default();
+			require([ 'dojo/query' ], function (query) {
+				console.log(query('h1'));
 			});
 		</script>
 	</body>

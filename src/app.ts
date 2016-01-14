@@ -1,11 +1,12 @@
-import { app, BrowserWindow, crashReporter } from 'electron';
-import global from './global';
+import { app, BrowserWindow } from 'electron';
 
-global.mainWindow = null;
+let mainWindow = null;
 
-crashReporter.start({
-	companyName: 'SitePen, Inc.'
-});
+/* TODO: Setup a crash reporter server */
+// crashReporter.start({
+// 	productName: 'Dojo Electron',
+// 	companyName: 'SitePen, Inc.'
+// });
 
 app.on('window-all-closed', function() {
 	console.log('closed');
@@ -23,7 +24,7 @@ app.on('window-all-closed', function() {
  */
 export = function(__dirname: string) {
 	// Create the browser window.
-	const mainWindow = global.mainWindow = new BrowserWindow({ width: 800, height: 600 });
+	mainWindow = new BrowserWindow({ width: 800, height: 600 });
 
 	// and load the index.html of the app.
 	mainWindow.loadURL('file://' + __dirname + '/../index.html');
@@ -36,6 +37,6 @@ export = function(__dirname: string) {
 		// Dereference the window object, usually you would store windows
 		// in an array if your app supports multi windows, this is the time
 		// when you should delete the corresponding element.
-		global.mainWindow = null;
+		mainWindow = null;
 	});
 };

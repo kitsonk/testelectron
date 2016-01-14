@@ -12,7 +12,9 @@
 		"build": "tsc --listFiles"
 	},
 	"devDependencies": {
+		"dojo": "1.10.4",
 		"dojo-loader": "2.0.0-alpha.4",
+		"dojo-typings": "1.11.0-alpha.1",
 		"electron-prebuilt": "0.36.3",
 		"tslint": "3.2.1",
 		"typescript": "1.7.5"
