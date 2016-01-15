@@ -24,7 +24,5 @@ require = (<any> require)('dojo-loader');
  * we won't load the main app module until this loads
  */
 electron.app.on('ready', function() {
-	(<any> require)(['app/app'], function(app) {
-		app(__dirname);
-	});
+	(<any> require)([ 'app/servelet' ], function() { });
 });

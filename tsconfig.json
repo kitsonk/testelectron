@@ -9,6 +9,7 @@
 	"files": [
 		"./src/app.ts",
 		"./src/boot.ts",
+		"./src/servelet.ts",
 		"./typings/tsd.d.ts"
 	]
 }

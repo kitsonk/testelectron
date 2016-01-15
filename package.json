@@ -1,7 +1,7 @@
 {
 	"name": "testelectron",
 	"version": "0.0.1",
-	"main": "lib/main.js",
+	"main": "lib/boot.js",
 	"license": "BSD-3-Clause",
 	"repository": {
 		"type": "git",
@@ -11,9 +11,12 @@
 		"start": "electron .",
 		"build": "tsc --listFiles"
 	},
-	"devDependencies": {
+	"dependencies": {
 		"dojo": "1.10.4",
 		"dojo-loader": "2.0.0-alpha.4",
+		"restify": "4.0.3"
+	},
+	"devDependencies": {
 		"dojo-typings": "1.11.0-alpha.1",
 		"electron-prebuilt": "0.36.3",
 		"tslint": "3.2.1",
