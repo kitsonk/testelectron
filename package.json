@@ -13,6 +13,7 @@
 	},
 	"dependencies": {
 		"dojo": "1.10.4",
+		"dojo-core": "2.0.0-alpha.1",
 		"dojo-loader": "2.0.0-alpha.4",
 		"restify": "4.0.3"
 	},

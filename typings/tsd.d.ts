@@ -1,5 +1,6 @@
 /// <reference path="electron/electron.d.ts" />
 /// <reference path="node/node.d.ts" />
 /// <reference path="restify/restify.d.ts" />
+/// <reference path="../node_modules/dojo-core/typings/dojo-core/dojo-core-2.0.0-alpha.1.d.ts" />
 /// <reference path="../node_modules/dojo-loader/typings/dojo-loader/dojo-loader-2.0.0-alpha.4.d.ts" />
 /// <reference path="../node_modules/dojo-typings/dojo/1.11/modules.d.ts" />

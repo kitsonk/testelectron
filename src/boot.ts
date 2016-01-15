@@ -14,7 +14,9 @@ require = (<any> require)('dojo-loader');
  */
 (<any> require).config({
 	packages: [
-		{ name: 'app', location: './lib' }
+		{ name: 'app', location: './lib' },
+		{ name: 'dojo', location: './node_modules/dojo' },
+		{ name: 'dojo-core', location: './node_modules/dojo-core' }
 	]
 });
 

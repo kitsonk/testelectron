@@ -10,6 +10,7 @@
 		"./src/app.ts",
 		"./src/boot.ts",
 		"./src/servelet.ts",
+		"./src/tasks.ts",
 		"./typings/tsd.d.ts"
 	]
 }
